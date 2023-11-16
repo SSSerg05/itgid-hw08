@@ -12,14 +12,14 @@ export const App = () => {
   const input = React.createElement('input', {defaultValue:'55'});
   const p1 = React.createElement('p',{},'hi');
   const p2 = React.createElement('p',{},'world');
-  const div = React.createElement('div',{className: 'text-grey', style:{color: 'grey'}}, p1, p2);
+  const div = React.createElement('div',{className: 'text-grey', style:{backgroundColor: 'darkblue'}}, p1, p2);
 
   const handleClick = (e) => {
     const val = input2Ref.current.value.trim();
     if (!val) {
       return
     }
-    
+
     const data = new Date();
     const li = React.createElement('li', {key: data}, val);
     setList([...list, li]);
